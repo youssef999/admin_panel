@@ -1,12 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ex22.apps">
+    package="com.lubanway">
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="Application"
+        android:label="Luban_delivery"
         android:icon="@mipmap/launcher_icon">
+       <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyBW3WO2ZHalL-yrQLLdTogo8LKT-yB5xyU"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -41,5 +43,10 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+       <activity
+           android:name="com.yalantis.ucrop.UCropActivity"
+           android:screenOrientation="portrait"
+           android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     </application>
 </manifest>

@@ -6,16 +6,21 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:trainpdf_app/app/edit_product.dart';
 import 'admin_posts.dart';
+import 'edit_brand.dart';
 import 'home.dart';
 
 class Action99 extends StatefulWidget {
   final name;
   final des;
-  final cat;
+  final cat,cat2,cat3;
   final img;
+  final email;
+  final pic;
+  final offers;
 
-  Action99(this.name, this.des, this.cat, this.img);
+  Action99({this.name , this.cat,this.cat2,this.cat3, this.img,this.email,this.offers, this.des,this.pic });
 
   @override
   _Action_State createState() => _Action_State();
@@ -140,6 +145,60 @@ class _Action_State extends State<Action99> {
 
                         label: Text(
                           " delete ",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 21,
+                              fontStyle: FontStyle.italic),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+
+              Container(
+                margin: EdgeInsets.all(24.0),
+                //  padding: EdgeInsets.symmetric(horizontal: 20.0,
+                //   vertical: 20.0 / 2),
+                decoration: BoxDecoration(
+                  color: Colors.grey[600],
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      FlatButton.icon(
+
+                        onPressed: () {
+
+
+                          Navigator.pushReplacement(context,
+                              MaterialPageRoute(builder: (context) {
+                                return EditAdmin(
+                                 name:   widget.name,
+                                   cat1: widget.cat,
+                                   cat2:widget.cat2,
+                                    cat3:widget.cat3,
+                                   email: widget.email,
+                                   offer :widget.offers,
+                                   img: widget.img,
+                                   pic:widget.pic,
+                                   // widget.offer
+                                );
+                              }));
+                        },
+                        icon: Icon(
+                          Icons.code,
+                          color: Colors.redAccent,
+                          size: 32,
+                        ),
+                        height: 12,
+                        // width:50,
+
+                        label: Text(
+                          " edit ",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 21,

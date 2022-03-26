@@ -6,6 +6,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:trainpdf_app/app/edit_product.dart';
+import 'package:trainpdf_app/app/home.dart';
 import 'admin_posts.dart';
 
 class Action88 extends StatefulWidget {
@@ -13,8 +15,13 @@ class Action88 extends StatefulWidget {
   final des;
   final cat;
   final img;
+  num price,price2,price3,price4,price5,price6;
+  final brand,brandemail;
 
-  Action88(this.name, this.des, this.cat, this.img);
+  Action88(
+      {this.name, this.des, this.cat, this.img,this.price2,
+      this.price3,this.price4,this.price5,this.price6,this.brand,this.brandemail, this.price}
+      );
 
   @override
   _Action_State createState() => _Action_State();
@@ -129,6 +136,64 @@ class _Action_State extends State<Action88> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       FlatButton.icon(
+
+                        onPressed: () {
+
+
+                          Navigator.pushReplacement(context,
+                              MaterialPageRoute(builder: (context) {
+                                return EditProducts(
+                                    brand: widget.brand,
+                                    img:widget.img,
+                                    brandemail: widget.brandemail,
+                                    cat:widget.cat,
+                                    des: widget.des,
+                                    name: widget.name,
+                                    price2: widget.price2,
+                                    price3:widget.price3,
+                                    price4: widget.price4,
+                                    price5: widget.price5,
+                                    price6: widget.price6,
+                                    price: widget.price,
+
+
+
+                                );
+                              }));
+                        },
+                        icon: Icon(
+                          Icons.code,
+                          color: Colors.redAccent,
+                          size: 32,
+                        ),
+                        height: 12,
+                        // width:50,
+
+                        label: Text(
+                          " edit ",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 21,
+                              fontStyle: FontStyle.italic),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.all(24.0),
+                //  padding: EdgeInsets.symmetric(horizontal: 20.0,
+                //   vertical: 20.0 / 2),
+                decoration: BoxDecoration(
+                  color: Colors.grey[600],
+                  borderRadius: BorderRadius.circular(24),
+                ),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      FlatButton.icon(
                        
                         onPressed: () {
                           Firestore.instance
@@ -141,7 +206,7 @@ class _Action_State extends State<Action88> {
 
                           Navigator.pushReplacement(context,
                               MaterialPageRoute(builder: (context) {
-                            return AllProductsView();
+                            return Home();
                           }));
                         },
                         icon: Icon(
