@@ -110,23 +110,22 @@ class _PostsScreenState extends State<AllProductsView> {
                                                 Text((posts.data()['price']).toString()??"",
                                                   style:TextStyle(color:Colors.green,fontSize:16,
                                                       fontWeight:FontWeight.bold),
-
                                                 ),
                                               ]),
                                             ),
                                             onTap: () {
 
-                                              Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(builder: (context) {
-                                                    return Action88(
-                                                        posts.data()['name'],
-                                                        posts.data()['des'],
-                                                        posts.data()['brand'],
-                                                        posts.data()['image']
-                                                    );
-                                                    // Steper();
-                                                  }));
+                                              // Navigator.push(
+                                              //     context,
+                                              //     MaterialPageRoute(builder: (context) {
+                                              //       return Action88(
+                                              //           posts.data()['name'],
+                                              //           posts.data()['des'],
+                                              //           posts.data()['brand'],
+                                              //           posts.data()['image']
+                                              //       );
+                                              //       // Steper();
+                                              //     }));
                                             },
                                           ));
                                 });
