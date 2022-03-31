@@ -10,7 +10,6 @@ class Custom_Text extends StatelessWidget {
   final double height;
 
 
-
   const Custom_Text(
       {
         this.text="",
