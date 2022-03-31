@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "863808455050",
+    "firebase_url": "https://jooo-5f50f-default-rtdb.firebaseio.com",
+    "project_id": "jooo-5f50f",
+    "storage_bucket": "jooo-5f50f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863808455050:android:af6a0241d8f88468a18873",
+        "android_client_info": {
+          "package_name": "com.ex22.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863808455050-8r66qlita6ktffcg01vce2tvagnm42h2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh5BppAG0nEX42-5sB_DbNtTGSlB-ho3I"
+        },
+        {
+          "current_key": "AIzaSyA7HtCvEdtP5GINA-6PzRv-k_xhFTHTGjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863808455050-8r66qlita6ktffcg01vce2tvagnm42h2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863808455050:android:994629e965660ad3a18873",
+        "android_client_info": {
+          "package_name": "com.job777.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863808455050-1j6fra94cqpo4ijcpmlmj0u0f6kj0joc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.job777.ecommerce",
+            "certificate_hash": "c0dda56127df9a03a3aad27317814f1f502a6021"
+          }
+        },
+        {
+          "client_id": "863808455050-8r66qlita6ktffcg01vce2tvagnm42h2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh5BppAG0nEX42-5sB_DbNtTGSlB-ho3I"
+        },
+        {
+          "current_key": "AIzaSyA7HtCvEdtP5GINA-6PzRv-k_xhFTHTGjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863808455050-8r66qlita6ktffcg01vce2tvagnm42h2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863808455050:android:c91b7d0b9f245042a18873",
+        "android_client_info": {
+          "package_name": "com.lubanway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863808455050-8r66qlita6ktffcg01vce2tvagnm42h2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh5BppAG0nEX42-5sB_DbNtTGSlB-ho3I"
+        },
+        {
+          "current_key": "AIzaSyA7HtCvEdtP5GINA-6PzRv-k_xhFTHTGjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863808455050-8r66qlita6ktffcg01vce2tvagnm42h2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
