@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:another_flushbar/flushbar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -8,7 +9,11 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:trainpdf_app/app/edit_product.dart';
 import 'package:trainpdf_app/app/home.dart';
-import 'admin_posts.dart';
+// <<<<<<< HEAD
+// =======
+// import 'admin_brands.dart';
+// >>>>>>> origin/master
+// import 'admin_posts.dart';
 
 class Action88 extends StatefulWidget {
   final name;
@@ -31,6 +36,7 @@ class _Action_State extends State<Action88> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    bool clicked=false;
     return Scaffold(
         backgroundColor: Colors.grey,
         appBar: AppBar(
@@ -137,6 +143,7 @@ class _Action_State extends State<Action88> {
                     children: [
                       FlatButton.icon(
 
+//<<<<<<< HEAD
                         onPressed: () {
 
 
@@ -195,14 +202,10 @@ class _Action_State extends State<Action88> {
                     children: [
                       FlatButton.icon(
                        
+
                         onPressed: () {
-                          Firestore.instance
-                              .collection('products')
-                              .where("image", isEqualTo: widget.img)
-                              .get()
-                              .then((snapshot) {
-                            snapshot.docs.last.reference.delete();
-                          });
+
+
 
                           Navigator.pushReplacement(context,
                               MaterialPageRoute(builder: (context) {
@@ -218,7 +221,7 @@ class _Action_State extends State<Action88> {
                         // width:50,
 
                         label: Text(
-                          " delete ",
+                          " حذف ",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 21,

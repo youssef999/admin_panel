@@ -47,10 +47,6 @@ class Home extends StatelessWidget {
                       height: 10
                     ),
 
-
-
-
-
                     Container(
                         width: 140,
                         child: FlatButton(
